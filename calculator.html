@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- Include Bootstrap CSS file from a CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="calcstyle.css">
+		
+		<!-- Include Bootstrap JavaScript files from a CDN -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<title>Paycheck Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+	<div class="container text-center">
+		<h1>Paycheck Calculator</h1>
+	</div>
+	<div class="container w-50 mx-auto">
+		<form>
+			<div class="row">
+				<div class="col text-center">
+					<label for="hours-worked">Hours Worked:</label>
+					<input type="number" id="hours-worked" class="form-control">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<label for="hourly-rate">Hourly Rate:</label>
+					<input type="number" id="hourly-rate" class="form-control">
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col text-center">
+					<button type="button" id="calculate-btn" class="btn btn-primary">Calculate</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<p id="result"></p>
+	
+	<div style="text-align: center;">
+
+	<p>Note: Overtime pay will be paid at 1.5 times the regular rate of pay for hours worked over 40 in a workweek.</p>
+	</div>
+		<script src="calc.js"></script>
+</body>
+</html>
